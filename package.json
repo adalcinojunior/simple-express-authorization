@@ -1,0 +1,23 @@
+{
+  "name": "simple-express-authorization",
+  "version": "1.0.0",
+  "description": "Scopes based authorization middleware for express applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adalcinojunior/simple-express-authorization.git"
+  },
+  "keywords": [
+    "express",
+    "authorization"
+  ],
+  "author": "Adalcino Junior",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/adalcinojunior/simple-express-authorization/issues"
+  },
+  "homepage": "https://github.com/adalcinojunior/simple-express-authorization#readme"
+}
