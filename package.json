@@ -4,7 +4,7 @@
   "description": "Scopes based authorization middleware for express applications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:unit": "mocha --opts test/mocha.opts test/unit/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -14,10 +14,15 @@
     "express",
     "authorization"
   ],
-  "author": "Adalcino Junior",
+  "author": "Adalcino Junior <adaljunior.inf@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/adalcinojunior/simple-express-authorization/issues"
   },
-  "homepage": "https://github.com/adalcinojunior/simple-express-authorization#readme"
+  "homepage": "https://github.com/adalcinojunior/simple-express-authorization#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
+  }
 }
