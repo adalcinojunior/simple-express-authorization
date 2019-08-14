@@ -58,10 +58,35 @@ describe('Module: property.extractor.js', () => {
                     }
                 }
                 const str = "req.scopes";
-                const prpertyExpected = undefined
+                const propertyExpected = undefined
 
-                const prpertyReturn = propertExt(object, str)
-                assert.equal(prpertyReturn, prpertyExpected, "Did not return expected property")
+                const propertyReturn = propertExt(object, str)
+                assert.equal(propertyReturn, propertyExpected, "Did not return expected property")
+            })
+
+            it('The valid object and property path value contains one. In addition, it must return the last valid value.', () => {
+                const object = {
+                    req: {
+                        user: {
+                            id: "507f1f77bcf86cd799439011",
+                            type: "user_type",
+                            scopes: ['scope1', 'scope2']
+                        },
+                        headers: [
+                            { "Content-Type": "application/json" },
+                            { "Content-Length": "10" }
+                        ]
+                    },
+                    res: {
+                        status: 0,
+                        body: ""
+                    }
+                }
+                const str = "req.user.scopes.";
+                const propertyExpected = object.req.user.scopes
+
+                const propertyReturn = propertExt(object, str)
+                assert.equal(propertyReturn, propertyExpected, "Did not return expected property")
 
             })
 
@@ -86,7 +111,7 @@ describe('Module: property.extractor.js', () => {
                 const str = ['req.user.scopes'];
 
                 try {
-                    const prpertyReturn = propertExt(object, str)
+                    const propertyReturn = propertExt(object, str)
                     assert.fail('Did not throw error');
                 } catch (e) {
                     const msgExpected = "The userScopeLocation property must be of type string. Check the settings passed to the simple-express-jwt-authorization middleware."
@@ -99,8 +124,8 @@ describe('Module: property.extractor.js', () => {
                 const object = undefined
                 const str = "req.user.scopes";
 
-                const prpertyReturn = propertExt(object, str)
-                assert.equal(prpertyReturn, undefined, "Did not return expected property")
+                const propertyReturn = propertExt(object, str)
+                assert.equal(propertyReturn, undefined, "Did not return expected property")
 
             })
 
