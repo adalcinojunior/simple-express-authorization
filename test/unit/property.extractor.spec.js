@@ -112,7 +112,7 @@ describe('Module: property.extractor.js', () => {
 
                 try {
                     const propertyReturn = propertExt(object, str)
-                    assert.fail('Did not throw error');
+                    assert.fail('Did not throw error')
                 } catch (e) {
                     const msgExpected = "The userScopeLocation property must be of type string. Check the settings passed to the simple-express-jwt-authorization middleware."
                     assert.equal(e.message, msgExpected, "Did not return expected error")
