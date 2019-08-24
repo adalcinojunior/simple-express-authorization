@@ -8,8 +8,8 @@ Ideal for app express or derivative such as express-gateway
 [![chai](https://img.shields.io/badge/chai-v4.2.0-orange.svg?style=flat-square&logo=chai)](https://www.npmjs.com/package/chai)
 [![supertest](https://img.shields.io/badge/supertest-v4.2.0-green.svg?style=flat-square&logo=supertest)](https://www.npmjs.com/package/supertest)
 [![nyc](https://img.shields.io/badge/nyc-v14.1.1-blue.svg?style=flat-square&logo=nyc)](https://www.npmjs.com/package/nyc)
-[![Coverage Status](https://coveralls.io/repos/github/adalcinojunior/simple-express-authorization/badge.svg?branch=develop)](https://coveralls.io/github/adalcinojunior/simple-express-authorization?branch=develop)
-[![Build Status](https://travis-ci.com/adalcinojunior/simple-express-authorization.svg?branch=develop)](https://travis-ci.com/adalcinojunior/simple-express-authorization.svg?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/adalcinojunior/simple-express-authorization/badge.svg?branch=master)](https://coveralls.io/github/adalcinojunior/simple-express-authorization?branch=master)
+[![Build Status](https://travis-ci.com/adalcinojunior/simple-express-authorization.svg?branch=master)](https://travis-ci.com/adalcinojunior/simple-express-authorization.svg?branch=master)
 
 
 ## Installation
