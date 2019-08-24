@@ -7,7 +7,7 @@
     "test": "mocha --opts test/mocha.opts test/**/*.spec.js",
     "test:unit": "mocha --opts test/mocha.opts test/unit/*.spec.js",
     "test:integration": "mocha --opts test/mocha.opts test/integration/*.spec.js",
-    "test:coverage": "nyc --clean --all --reporter=html --reporter=text mocha --opts test/mocha.opts test/**/*.spec.js"
+    "test:coverage": "nyc --clean --all --reporter=html --reporter=text mocha --opts test/mocha.opts test/**/*.spec.js | coveralls"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/adalcinojunior/simple-express-authorization#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "coveralls": "^3.0.6",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
     "sinon": "^7.4.1",
