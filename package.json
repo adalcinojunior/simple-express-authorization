@@ -4,7 +4,7 @@
   "description": "Scopes based authorization middleware for express applications.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --opts test/mocha.opts test/**/*.spec.js",
+    "test": "npm run test:coverage",
     "test:unit": "mocha --opts test/mocha.opts test/unit/*.spec.js",
     "test:integration": "mocha --opts test/mocha.opts test/integration/*.spec.js",
     "test:coverage": "nyc --clean --all --reporter=html --reporter=text mocha --opts test/mocha.opts test/**/*.spec.js",
